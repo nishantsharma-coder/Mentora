@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHelp AI – Student Q&A</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>EduHelp AI</h1>
+    <nav>
+        <a href="#ai">AI Answer</a>
+        <a href="#board">Q&A Board</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Ask Anything. Learn Easily.</h2>
+    <p>AI-powered answers for students from class 1–12 and college.</p>
+</section>
+
+<section id="ai" class="container">
+    <h2>Ask AI Your Question</h2>
+    <textarea id="ai-question" placeholder="Type your question here..."></textarea>
+    <button onclick="getAIAnswer()">Get Answer</button>
+    <div id="ai-answer"></div>
+</section>
+
+<section id="board" class="container">
+    <h2>Student Public Q&A Board</h2>
+
+    <textarea id="student-question" placeholder="Post a question for other students..."></textarea>
+    <button onclick="postQuestion()">Post Question</button>
+
+    <h3>Questions</h3>
+    <ul id="question-list"></ul>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
